@@ -106,7 +106,7 @@ footer {
 
   cursor: pointer;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -126,13 +126,24 @@ header svg {
   color: var(--accent-color);
 }
 
-.current::before {
+.line-header > li {
   display: inline-block;
+  vertical-align: top;
+}
+
+.line-header > li a {
+  position: relative;
+}
+
+.line-header > li a:hover:after {
   content: "";
-  width: 48px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background: var(--accent-color);
 }
 
 .header-nav:hover svg {
@@ -141,7 +152,7 @@ header svg {
 
 .main-section {
   text-align: center;
-  /* background-color: #2f303a; */
+
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -199,7 +210,7 @@ header svg {
 
   min-width: 73px;
   text-align: center;
-  border-color: #f5f4fa;
+  border: none;
 
   color: var(--title-text-color);
   background-color: #f5f4fa;
@@ -219,6 +230,8 @@ header svg {
   background-color: var(--accent-color);
   color: var(--white-color);
   border-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main-section .main-title {
@@ -524,7 +537,6 @@ main .buttons li {
   width: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-
   transition: all color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -587,14 +599,14 @@ header .item svg {
 
 .thumb {
   position: relative;
-  margin: 0px;
+  /* margin: 0px; */
 }
 
 .thumb > .label {
   position: absolute;
   top: 224px;
-  right: 0;
-  margin: 0;
+  /* right: 0;
+  margin: 0; */
   padding: 27px 82px;
   font-size: 14px;
   background: rgba(47, 48, 58, 0.8);
@@ -607,7 +619,7 @@ header .item svg {
   height: 300px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px dashed tomato;
+  /* outline: 2px dashed tomato; */
   background-color: #bdbdbd;
 
   overflow: hidden;

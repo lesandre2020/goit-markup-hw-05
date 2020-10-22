@@ -60,11 +60,6 @@ footer .conteiner {
   padding-top: 0;
 }
 
-/* .header-item {
-  display: inline-flex;
-  justify-content: space-between;
-}  */
-
 .logo {
   color: #000000;
 
@@ -110,6 +105,8 @@ footer {
   font-style: normal;
 
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -127,6 +124,15 @@ header svg {
 
 .header-nav.current {
   color: var(--accent-color);
+}
+
+.current::before {
+  display: inline-block;
+  content: "";
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 .header-nav:hover svg {
@@ -204,6 +210,8 @@ header svg {
   text-align: center;
 
   cursor: pointer;
+
+  transition: all color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio:hover,
@@ -354,6 +362,7 @@ nav .list li:last-child {
 }
 
 .list-portfolio {
+  transition: all color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #eeeeee;
 }
 
@@ -451,6 +460,8 @@ main .buttons li {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .box-clients:nth-child(6) svg {
@@ -513,6 +524,8 @@ main .buttons li {
   width: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition: all color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item-link svg {
@@ -570,4 +583,21 @@ main .buttons li {
 
 header .item svg {
   margin-right: 10px;
+}
+
+.thumb {
+  position: relative;
+  margin: 0px;
+}
+
+.thumb > .label {
+  position: absolute;
+  top: 224px;
+  right: 0;
+  margin: 0;
+  padding: 27px 82px;
+
+  font-size: 14px;
+  background: rgba(47, 48, 58, 0.8);
+  color: #fff;
 }

@@ -621,7 +621,7 @@ header .item svg {
 
 .thumb > .label {
   position: absolute;
-
+  bottom: 0;
   width: 370px;
   padding: 27px;
   font-size: 14px;
@@ -661,7 +661,7 @@ header .item svg {
 }
 
 .overlay p {
-  padding: 24px 63px;
+  padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;

@@ -106,7 +106,7 @@ footer {
 
   cursor: pointer;
 
-  transition: all color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -144,6 +144,9 @@ header svg {
   height: 4px;
   border-radius: 2px;
   background: var(--accent-color);
+
+  /* transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .header-nav:hover svg {
@@ -473,8 +476,13 @@ main .buttons li {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.box-clients svg {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .box-clients:nth-child(6) svg {
@@ -537,7 +545,9 @@ main .buttons li {
   width: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: all color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item-link svg {
@@ -605,6 +615,7 @@ header .item svg {
 .thumb > .label {
   position: absolute;
   top: 224px;
+  width: 370px;
   /* right: 0;
   margin: 0; */
   padding: 27px 82px;
